@@ -2,7 +2,7 @@
 // Fazer uma saída de forma interpolada. (`${}`)
 // "Jogador", se ele eh básico, idade, apelido, jogo e time. 
 // 2. Crie duas variáveis numérica e exibir uma multiplicação ou subtração.
-// 3. Declarar pontos 1 e 2 (fases). Calcular o total, aa diferença entre fases, nível  atual e pontos fatando para o próximo nível.
+// 3. Declarar pontos 1 e 2 (fases). Calcular o total, aa diferença entre fases, nível  atual e pontos faltando para o próximo nível.
 
 
 1.
@@ -19,7 +19,7 @@ console.log(`Idade: ${idade} anos`);
 console.log(`Tipo de Conta: ${ehBasico} "Básico"`);
 console.log(`Jogo Principal: ${jogo}`);
 console.log(`TimeAtual: ${timeAtual}`);
-console.log(`Team: ${team} Team Blue`)
+console.log(`Team: ${team} Team Blue`);
 
 2.
 let danosSheriff = 45;
@@ -28,5 +28,25 @@ let danosInocente = 55;
 
 let resultado = danosSheriff - danosMurder - danosInocente;
 
-console.log(`danosSheriff
+console.log(`Danos de Sheriff: ${danosSheriff}`);
+console.log(`Danos de Murder: ${danosMurder}`);
+console.log(`Danos de Inocente: ${danosInocente}`);
 console.log(resultado);
+
+3.
+let moedasGanhasPartida1 = 17;
+let moedasGanhasPartida2 = 45;
+
+let resultadoMoedasGanhas = moedasGanhasPartida1 + moedasGanhasPartida2; 
+let diferencaFases = moedasGanhasPartida1 - moedasGanhasPartida2; 
+
+const pontosParaOPróximoNível = 987;
+let nivelAtual = 207;
+let nivelFaltando = 19%
+
+console.log(`Moedas ganhas na primeira partida: ${moedasGanhasPartida1}`);
+console.log(`Moedas ganhas na segunda partida: ${moedasGanhasPartida2}`);
+console.log(resultadoMoedasGanhas);
+
+console.log(`diferenças de fases: ${moedasGanhasPartida1 - moedasGanhasPartida2}`);
+
