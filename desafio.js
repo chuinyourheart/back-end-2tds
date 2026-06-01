@@ -6,13 +6,15 @@
 // 4. A partir da declaração de níveis e pontos, exiba se o jogador é "avançado", se foi "banido" ou se pode participar de "torneios".
 // 5. TODOS - De acordo com as variáveis lançadas e declarando, quais processos ou qual processo pode ser alterado para uma função.
 
-1.
+//1.
 let apelido = "AngelClouds";
 let idade = 17;
 let ehBasico = true;
 let jogo = "Roblox";
-let timeAtual = "Red and Blue (murder's X sheriff's)";
+let timeAtual = "Red and Blue (Murder's X Sheriff's)";
 let team = "Murder"
+
+function exibirPerfil(apelido, idade, ehBasico, jogo, timeAtual, team) {
 
 console.log(`Perfil do Jogador`);
 console.log(`Apelido: ${apelido}`);
@@ -21,27 +23,34 @@ console.log(`Tipo de Conta: ${ehBasico}, "Básico"`);
 console.log(`Jogo Principal: ${jogo}`);
 console.log(`TimeAtual: ${timeAtual}`);
 console.log(`Team: ${team} Team Blue`);
+}
 
-2.
+exibirPerfil(`AngelClouds", ${idade}, ${ehBasico}, "Roblox", "Red and Blue (Murder's X Sheriff's), "Murder`);
+//2.
 let danosSheriff = 45;
 let danosMurder = 20;
 let danosInocente = 55;
 
+function calcularDanos(danosSheriff, danosMurder, danosInocente) {
 let resultado = danosSheriff - danosMurder - danosInocente;
 
 console.log(`Danos de Sheriff: ${danosSheriff}`);
 console.log(`Danos de Murder: ${danosMurder}`);
 console.log(`Danos de Inocente: ${danosInocente}`);
 console.log(resultado);
+}
 
-3.
+calcularDanos(45, 20, 55);
+
+//3.
 let moedasGanhasPartida1 = 17;
 let moedasGanhasPartida2 = 45;
 
+function progresso(moedas1, moedas2, nivelAtual, pontosParaProximo, nivelFaltando) {
 let resultadoMoedasGanhas = moedasGanhasPartida1 + moedasGanhasPartida2; 
 let diferencaFases = moedasGanhasPartida1 - moedasGanhasPartida2; 
 
-const pontosParaOPróximoNível = 987;
+const pontosParaOProximoNivel = 987;
 let nivelAtual = 207;
 let nivelFaltando = 19;
 
@@ -50,22 +59,30 @@ console.log(`Moedas ganhas na segunda partida: ${moedasGanhasPartida2}`);
 console.log(resultadoMoedasGanhas);
 
 console.log(`diferenças de fases: ${moedasGanhasPartida1 - moedasGanhasPartida2}`);
-
 console.log(`Nível atual do jogador: ${nivelAtual}`);
-console.log(`Pontos para o próximo nível: ${pontosParaOPróximoNível}`);
+console.log(`Pontos para o próximo nível: ${pontosParaOProximoNivel}`);
 console.log(`Nível faltando: ${nivelFaltando}%`);
+}
 
-4.
+progresso(17, 45, 207, 987, 19);
+
+//4.
 let ehAvancado = true;
 let foiBanido = true;
 let torneios = true;
 let motivosDeBan = "Hack";
 let motivosDeTorneios = "Banido";
 
+function verificarStatusConta(ehAvancado, foiBanido, torneios, motivosDeBan, motivosDeTorneios) {
+
 console.log(`Tipo de jogador: ${ehAvancado}, "Avançado".`);
 console.log(`Status de conta: "Banido", ${foiBanido}.`);
 console.log(`Motivos de Ban: Ter usado ${motivosDeBan} nas partidas.`);
 console.log(`Torneios do jogador: "Banido", ${torneios}.`);
 console.log(`Motivos de não comparecer em torneios: ${motivosDeTorneios}.`);
+}
 
-5.
+verificarStatusConta(true, true, true, "Hack", "Banido");
+
+//5.
+//feito :3
